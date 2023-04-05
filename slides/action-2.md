@@ -8,9 +8,9 @@ title: ⚙ Context III (Extended State)
 
 <div class="col-span-2">
 
-# ⚙ Context III (Extended State)
+# ⚙ Actions II
 
-```php {3-7} {maxHeight:'400px'}
+```php {12-15} {maxHeight:'400px'}
 [
     'id' => 'traffic_lights_machine',
     'context' => [
@@ -22,7 +22,10 @@ title: ⚙ Context III (Extended State)
     'states' => [
         'red' => [
             'on' => [
-                'TIMER_RED' => 'yellow'
+                'TIMER_RED' => [
+                    'target' => 'yellow',
+                    'actions' => ?,
+                ],
             ]
         ],
         'yellow' => [
@@ -57,13 +60,10 @@ stateDiagram-v2
 </div>
 
 <!--
-yine trafik lambalari ornegine geri donecek olursak;
+bu noktada artik daha detayli bir transition tanimina ihtiyacimiz var, cunku transition'la birlikte action'lar calistirmak istiyoruz
 
-her bir lambanin kac saniye yanacagini suna benzer bir sekilde tanimlayabiliriz.
+bu yuzden event'in karsisini bir array'e ceviriyoruz
+target ile bu transition sonucunda hedefledigimiz state'i yaziyoruz
 
-bu tanimlama diagram uzerinde yer almiyor, aslinda diagramda gostermeye de gerek yok, cunku bu bir tur internal bilgi
-
-hangi lambanin kac sn sureyle yanacagini tanimladik, fakat bu tanimlama hala teorik, cunku hangi state'ne hangi lambanin kac sn sureyle yanacagina dair bir action yok elimizde
-
-tam da bu nokta da action'lar konusuna gecebiliriz
+actions kisminda da calistirmak istedigimiz action'lari yazacagiz
 -->

@@ -45,10 +45,10 @@ title: ⚙ Context I (Extended State)
 title: traffic_lights_machine
 ---
 stateDiagram-v2
-    [*] --> Green
-    Green --> Yellow: TIMER_GREEN
-    Yellow --> Red: TIMER_YELLOW
-    Red --> Green: TIMER_RED
+    [*] --> Red
+    Red --> Yellow: TIMER_RED
+    Yellow --> Green: TIMER_YELLOW
+    Green --> Red: TIMER_GREEN
 ```
 
 </div>

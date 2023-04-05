@@ -121,3 +121,23 @@ src: ./slides/context-2.md
 ---
 src: ./slides/context-3.md
 ---
+
+---
+src: ./slides/action-1.md
+---
+
+---
+src: ./slides/action-2.md
+---
+
+---
+src: ./slides/action-3.md
+---
+
+---
+src: ./slides/action-4.md
+---
+
+---
+src: ./slides/action-5.md
+---

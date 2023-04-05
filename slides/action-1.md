@@ -8,9 +8,9 @@ title: ⚙ Context III (Extended State)
 
 <div class="col-span-2">
 
-# ⚙ Context III (Extended State)
+# ⚙ Actions I
 
-```php {3-7} {maxHeight:'400px'}
+```php {10-14} {maxHeight:'400px'}
 [
     'id' => 'traffic_lights_machine',
     'context' => [
@@ -22,6 +22,7 @@ title: ⚙ Context III (Extended State)
     'states' => [
         'red' => [
             'on' => [
+                Action?
                 'TIMER_RED' => 'yellow'
             ]
         ],
@@ -57,13 +58,11 @@ stateDiagram-v2
 </div>
 
 <!--
-yine trafik lambalari ornegine geri donecek olursak;
+makinenin baslangic state'indeki transition'a odaklanalim
 
-her bir lambanin kac saniye yanacagini suna benzer bir sekilde tanimlayabiliriz.
+burada diyoruz ki, TIMER_RED event'i geldigi zaman red durumundan yellow'a gecer makinenin state'i
 
-bu tanimlama diagram uzerinde yer almiyor, aslinda diagramda gostermeye de gerek yok, cunku bu bir tur internal bilgi
+sari isik durumuna gectigimiz icin ayni zamanda diyebilmeliyiz ki, makine bu gecisle birlikte sari isigi yakmasi lazim
 
-hangi lambanin kac sn sureyle yanacagini tanimladik, fakat bu tanimlama hala teorik, cunku hangi state'ne hangi lambanin kac sn sureyle yanacagina dair bir action yok elimizde
-
-tam da bu nokta da action'lar konusuna gecebiliriz
+iste makinelerin bu sekilde yapmasi gereken gorevlere action'lar diyoruz
 -->

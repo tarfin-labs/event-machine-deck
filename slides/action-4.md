@@ -8,9 +8,9 @@ title: ⚙ Context III (Extended State)
 
 <div class="col-span-2">
 
-# ⚙ Context III (Extended State)
+# ⚙ Actions IV
 
-```php {3-7} {maxHeight:'400px'}
+```php {14-17} {maxHeight:'400px'}
 [
     'id' => 'traffic_lights_machine',
     'context' => [
@@ -22,7 +22,13 @@ title: ⚙ Context III (Extended State)
     'states' => [
         'red' => [
             'on' => [
-                'TIMER_RED' => 'yellow'
+                'TIMER_RED' => [
+                    'target'  => 'yellow',
+                    'actions' => [
+                        'turn_off_red_light',
+                        'turn_on_yellow_light',
+                    ],
+                ],
             ]
         ],
         'yellow' => [
@@ -48,7 +54,7 @@ title: traffic_lights_machine
 ---
 stateDiagram-v2
     [*] --> Red
-    Red --> Yellow: TIMER_RED
+    Red --> Yellow: TIMER_RED <br/>do / turn_off_red_light<br/>do / turn_on_yellow_light
     Yellow --> Green: TIMER_YELLOW
     Green --> Red: TIMER_GREEN
 ```
@@ -57,13 +63,5 @@ stateDiagram-v2
 </div>
 
 <!--
-yine trafik lambalari ornegine geri donecek olursak;
-
-her bir lambanin kac saniye yanacagini suna benzer bir sekilde tanimlayabiliriz.
-
-bu tanimlama diagram uzerinde yer almiyor, aslinda diagramda gostermeye de gerek yok, cunku bu bir tur internal bilgi
-
-hangi lambanin kac sn sureyle yanacagini tanimladik, fakat bu tanimlama hala teorik, cunku hangi state'ne hangi lambanin kac sn sureyle yanacagina dair bir action yok elimizde
-
-tam da bu nokta da action'lar konusuna gecebiliriz
+sari isigi yaktigimiz action'u eklemistik, simdi de kirmizi isigi sondurme action'ini eklemeliyiz
 -->
