@@ -8,7 +8,7 @@ title: ⚙ Context III (Extended State)
 
 <div class="col-span-2">
 
-# ⚙ Exit Actions I
+# ⚙ Exit Actions
 
 ```php {8,15,22} {maxHeight:'400px'}
 [
@@ -76,4 +76,6 @@ entry/exit action'lari state bazinda tanimladik, gereksiz tekrarlari engellemis 
 burada action'larin tanimlama sekline yine bir dikkat cekeyim;
 tek bir action oldugunda bunu duz bir string olarak girebilirken, birden fazla oldugunda array olarak girebiliriz
 duz string olarak girmeyi syntax olarak kisayol gibi dusunebilirsiniz
+
+event machine paketinde, bu yapi bir veya birden fazla config'in tanimlanabildigi her durumda kullanilabilir
 -->
