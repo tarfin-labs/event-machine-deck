@@ -181,3 +181,15 @@ src: ./slides/action-behaviors-4.md
 ---
 src: ./slides/action-behaviors-5.md
 ---
+
+---
+src: ./slides/guarded-transitions-1.md
+---
+
+---
+src: ./slides/guarded-transitions-2.md
+---
+
+---
+src: ./slides/guarded-actions-1.md
+---
