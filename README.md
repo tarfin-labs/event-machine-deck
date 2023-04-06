@@ -1,5 +1,7 @@
 # EventMachine Deck
 
+PDF version of the slides is available [here](./event-machine-deck.pdf).
+
 To start the slide show:
 
 - `npm install`
