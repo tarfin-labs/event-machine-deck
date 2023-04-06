@@ -217,3 +217,19 @@ src: ./slides/pure-transition-3.md
 ---
 src: ./slides/pure-transition-4.md
 ---
+
+---
+src: ./slides/event-machines-1.md
+---
+
+---
+src: ./slides/event-machines-2.md
+---
+
+---
+src: ./slides/event-machines-3.md
+---
+
+---
+src: ./slides/event-machines-4.md
+---
