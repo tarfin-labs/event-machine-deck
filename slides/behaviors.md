@@ -52,4 +52,9 @@ daha once event machine konseptini genel olarak gosterdigim slaytta bahsettigim 
 simdiye kadarki yazdiklarimizi, array icinde config altina aliyoruz ve bunlardan ayri olarak makine davranislarini tanimlamak uzere devam ediyoruz.
 
 makine davranislari kod olarak tanimlandigi icin diagram uzerinde gostermek mantikli olmaz.
+
+simdiye kadar hic implementasyon  yazmadik fakat makinein davranisi hakkinda inanilmaz cok bilgiye sahibiz.
+daha guzeli gercekten nerede ne implementasyon yapmamiz gerektigine dair inanilmaz net bilgiye sahibiz.
+
+configurasyon'la behavi'lari ayirmanin boyle bir faydasi var, hic kod yazmadan isleyisi cikarabilir, uzerine kafa yorabilir, gereksiz implementasyonlar kacinabiliriz vs.
 -->
