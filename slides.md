@@ -149,3 +149,7 @@ src: ./slides/entry-actions-1.md
 ---
 src: ./slides/entry-actions-2.md
 ---
+
+---
+src: ./slides/exit-actions-1.md
+---
