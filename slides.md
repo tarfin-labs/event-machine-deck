@@ -157,3 +157,19 @@ src: ./slides/exit-actions-1.md
 ---
 src: ./slides/action-6.md
 ---
+
+---
+src: ./slides/behaviors.md
+---
+
+---
+src: ./slides/action-behaviors-1.md
+---
+
+---
+src: ./slides/action-behaviors-2.md
+---
+
+---
+src: ./slides/action-behaviors-3.md
+---
