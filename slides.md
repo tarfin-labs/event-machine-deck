@@ -141,3 +141,11 @@ src: ./slides/action-4.md
 ---
 src: ./slides/action-5.md
 ---
+
+---
+src: ./slides/entry-actions-1.md
+---
+
+---
+src: ./slides/entry-actions-2.md
+---
