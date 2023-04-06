@@ -193,3 +193,27 @@ src: ./slides/guarded-transitions-2.md
 ---
 src: ./slides/guarded-actions-1.md
 ---
+
+---
+src: ./slides/definition-1.md
+---
+
+---
+src: ./slides/definition-2.md
+---
+
+---
+src: ./slides/pure-transition-1.md
+---
+
+---
+src: ./slides/pure-transition-2.md
+---
+
+---
+src: ./slides/pure-transition-3.md
+---
+
+---
+src: ./slides/pure-transition-4.md
+---
